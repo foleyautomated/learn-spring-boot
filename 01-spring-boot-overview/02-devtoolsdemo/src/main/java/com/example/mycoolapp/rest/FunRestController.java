@@ -13,4 +13,16 @@ public class FunRestController {
         return "Hello World!!!!!!!!!!";
     }
 
+    // New endpoint for workout
+
+    @GetMapping("/workout")
+    public String getDialyWorkout() {
+        return "run a hard 5K!";
+    }
+
+    @GetMapping("/weightlift")
+    public String getDialyLift() {
+        return "Lift 100 Lbs!";
+    }
+
 }
